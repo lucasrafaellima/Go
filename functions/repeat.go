@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func variadicFunc(x ...int) int {
 	var anwser int
 	for _, v := range x {
@@ -13,6 +15,6 @@ func main() {
 	a := 6
 	b := 10
 	c := 21
-	variadicFunc(a,b,c)
-	
+	t := variadicFunc(a, b, c)
+	fmt.Println(t)
 }
